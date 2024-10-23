@@ -1,0 +1,44 @@
+// body{
+//     background-color: grey;
+// }
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+a{
+    font-size: 1.6rem;
+}
+header{
+   background-image: url(/assets/images/banner-bg.jpg.webp);
+   background-repeat: no-repeat;
+}
+
+nav{
+   padding-top: 4rem;
+}
+
+.header-nav-menu{
+    background-color: white!important;
+    // border: 1px solid black;
+    box-shadow: 5px 5px 5px grey;
+    padding:  1rem 2rem;
+}
+.nav-item {
+    margin-right: 20px; /* Adjust spacing */
+}
+h1{
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+nav{
+    position: sticky;
+    top: -20px;
+    // padding-top: -3rem;
+}
