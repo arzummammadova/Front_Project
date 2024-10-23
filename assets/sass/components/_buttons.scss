@@ -1,0 +1,11 @@
+.button{
+  padding: 1rem 3rem;
+  color: $text-color-white;
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  font-size: 1.8rem;
+  margin-top: 4rem;
+  border-radius: 3rem;
+  border: 1px solid $primary;
+  font-family: "Roboto",sans-serif;
+  text-transform: uppercase;
+}

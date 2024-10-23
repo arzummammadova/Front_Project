@@ -1,44 +1,58 @@
-// body{
-//     background-color: grey;
-// }
 
-
-html{
-    font-size: 62.5%;
-}
-
-body{
-    font-size: 1.6rem;
-}
-a{
-    font-size: 1.6rem;
-}
 header{
    background-image: url(/assets/images/banner-bg.jpg.webp);
    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center ;
 }
 
 nav{
    padding-top: 4rem;
-}
+   position: sticky;
+   top: -20px;
+text-transform: uppercase;
 
+}
+.navbar{
+   @include flex;
+}
+.navbar-nav {
+    gap: 1rem;
+}
+.nav-link{
+    font-size: 1.4rem;
+}
 .header-nav-menu{
     background-color: white!important;
     // border: 1px solid black;
-    box-shadow: 5px 5px 5px grey;
+   margin-top: 7rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     padding:  1rem 2rem;
+    justify-content: space-between;
+    top: -82px;
+    width: 100%;
 }
 .nav-item {
-    margin-right: 20px; /* Adjust spacing */
-}
-h1{
-    font-size: 6rem;
-    font-weight: 700;
-    margin-bottom: 30px;
+    margin-right: 20px; 
+  
 }
 
-nav{
-    position: sticky;
-    top: -20px;
-    // padding-top: -3rem;
+.nav-icons{
+    // @include flex;
+    margin-top: 0.5rem;
+    margin-left: 1.3rem;
 }
+.nav-link{
+    font-size: 1.2rem;
+    color: $black!important;
+    font-weight: 500;
+    &:hover{
+        color: $primary!important;
+        transition: all 0.3s;
+    }
+}
+
+.active{
+    color:$primary!important;
+}
+
