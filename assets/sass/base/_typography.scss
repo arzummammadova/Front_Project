@@ -14,6 +14,36 @@ h2{
     font-family: "Poppins", sans-serif;
     align-items: center;
 }
+
+h3{
+    font-size: 2.2rem;
+    width: 25rem;
+    text-align: center;
+   
+    margin-bottom: 30px;
+    margin-top: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    text-transform: uppercase;
+}
 p{
     font-size: 1.4rem;
+}
+
+.price-card {
+
+    display: flex;
+    gap: 2rem;
+}
+
+.price {
+    font-weight: 600;
+}
+
+span {
+    text-decoration: line-through;
+    color: $span-color;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
 }

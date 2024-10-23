@@ -64,8 +64,36 @@ h2 {
   align-items: center;
 }
 
+h3 {
+  font-size: 2.2rem;
+  width: 25rem;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  text-transform: uppercase;
+}
+
 p {
   font-size: 1.4rem;
+}
+
+.price-card {
+  display: flex;
+  gap: 2rem;
+}
+
+.price {
+  font-weight: 600;
+}
+
+span {
+  text-decoration: line-through;
+  color: #D5D5D5;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 
 .button {
@@ -295,10 +323,18 @@ i {
 #our-product .container .our-product h2:before {
   content: url(https://preview.colorlib.com/theme/karma/img/product/prev.png);
   margin-right: 1rem;
+  opacity: 0.5;
+}
+#our-product .container .our-product h2:hover:before {
+  opacity: 1;
 }
 #our-product .container .our-product h2:after {
   content: url(https://preview.colorlib.com/theme/karma/img/product/next.png);
   margin-left: 1rem;
+  opacity: 0.5;
+}
+#our-product .container .our-product h2:hover:after {
+  opacity: 1;
 }
 #our-product .container .our-product-text {
   max-width: 45%;
@@ -339,20 +375,6 @@ i {
   text-transform: uppercase;
   font-weight: 500;
 }
-#our-product .container .our-product-cards .our-product-cards-card .price-card {
-  display: flex;
-  gap: 2rem;
-}
-#our-product .container .our-product-cards .our-product-cards-card .price {
-  font-weight: 600;
-}
-#our-product .container .our-product-cards .our-product-cards-card span {
-  text-decoration: line-through;
-  color: #D5D5D5;
-  font-size: 1.6rem;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-}
 #our-product .container .our-product-cards .our-product-cards-card-icon {
   font-size: 1.2rem;
   color: white;
@@ -376,11 +398,15 @@ i {
 }
 
 #shopnow .container-fluid .shopnow {
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
 }
 #shopnow .container-fluid .shopnow-leftside {
+  color: white;
   width: 50%;
-  height: 100%;
+  height: 71rem;
   background-image: url(https://preview.colorlib.com/theme/karma/img/exclusive.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -393,7 +419,7 @@ i {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 7rem 0rem;
+  padding: 10rem 0rem;
 }
 #shopnow .container-fluid .shopnow-leftside .support {
   width: 100%;
@@ -412,6 +438,53 @@ i {
 }
 #shopnow .container-fluid .shopnow-rightside {
   width: 50%;
+  padding: 10rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9F9FF;
+  flex-direction: column;
+}
+#shopnow .container-fluid .shopnow-rightside figure {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#shopnow .container-fluid .shopnow-rightside figure::before {
+  content: url(https://preview.colorlib.com/theme/karma/img/product/prev.png);
+}
+#shopnow .container-fluid .shopnow-rightside figure::after {
+  content: url(https://preview.colorlib.com/theme/karma/img/product/next.png);
+}
+#shopnow .container-fluid .shopnow-rightside figure img {
+  width: 50%;
+  height: 40%;
+}
+#shopnow .container-fluid .shopnow-rightside i {
+  color: white;
+}
+
+#brands {
+  padding: 9rem 0rem;
+}
+#brands .container .brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#brands .container .brands figure {
+  width: calc(20% - 1rem);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#brands .container .brands figure img {
+  opacity: 0.5;
+}
+#brands .container .brands figure img:hover {
+  opacity: 1;
+  transition: all 0.3s;
 }
 
 @media (max-width: 992px) {
@@ -428,6 +501,19 @@ i {
   }
   h2 {
     font-size: 2.6rem;
+  }
+  #shopnow .container-fluid .shopnow {
+    flex-direction: column;
+    gap: 0;
+  }
+  #shopnow .container-fluid .shopnow-leftside {
+    width: 100%;
+  }
+  #shopnow .container-fluid .shopnow-leftside .support {
+    flex-wrap: nowrap;
+  }
+  #shopnow .container-fluid .shopnow-rightside {
+    width: 100%;
   }
 }
 @media (max-width: 756px) {
