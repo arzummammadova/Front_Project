@@ -1,82 +1,117 @@
 
-header{
-   background-image: url(/assets/images/banner-bg.jpg.webp);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center ;
-}
-
-nav{
-   padding-top: 4rem;
-   position: sticky;
-   top: -20px;
-text-transform: uppercase;
-
-}
-.navbar{
-   @include flex;
-}
-.navbar-nav {
+header {
+    background-image: url(https://preview.colorlib.com/theme/karma/img/banner/banner-bg.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    background-position: center;
+ }
+ 
+ 
+ nav {
+    padding-top: 4rem;
+    position: sticky;
+    top: -20px;
+    text-transform: uppercase;
+ }
+ 
+ .navbar {
+    @include flex;
+ }
+ 
+ .navbar-nav {
     gap: 1rem;
-}
-.nav-link{
+ }
+ 
+ .nav-link {
     font-size: 1.4rem;
-}
-.header-nav-menu{
+ }
+ 
+
+ .nav-link.dropdown-toggle::after {
+    display: none !important;
+ }
+ 
+ .header-nav-menu {
     background-color: white!important;
-    // border: 1px solid black;
-   margin-top: 7rem;
+    margin-top: 7rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    padding:  1rem 2rem;
+    padding: 1rem 2rem;
     justify-content: space-between;
     top: -82px;
     width: 100%;
-}
-.nav-item {
-    margin-right: 20px; 
-  
-}
-
-.nav-icons{
-    // @include flex;
+ }
+ 
+ .nav-item {
+    margin-right: 20px;
+ }
+ 
+ .nav-icons {
     margin-top: 0.5rem;
     margin-left: 1.3rem;
-}
-.nav-link{
+ }
+ 
+ .nav-link {
     font-size: 1.2rem;
     color: $black!important;
     font-weight: 500;
-    &:hover{
-        color: $primary!important;
-        transition: all 0.3s;
+    &:hover {
+       color: $primary!important;
+       transition: all 0.3s;
     }
-}
+ }
+ 
+ .active {
+    color: $primary!important;
+ }
+ 
 
-.active{
-    color:$primary!important;
-}
-
-
-
-/*dropdown code*/
-.dropdown-item {
-    padding: 2rem 2rem!important;
+ .dropdown-item {
+    padding: 2rem 4rem!important;
     display: block;
     width: 100%;
-    /* padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x); */
-    clear: both;
+    color: $primary!important;
+    font-size: 1.2rem;
     font-weight: 400;
-    color: var(--bs-dropdown-link-color);
     text-align: inherit;
     text-decoration: none;
     white-space: nowrap;
     background-color: transparent;
     border: 0;
     border-radius: var(--bs-dropdown-item-border-radius, 0);
-}
+ }
+ 
+ 
+ .dropdown-item:focus, .dropdown-item:hover {
+    background-color: #ffba00;
+    color: $text-color-white!important;
+ }
+ 
 
-dropdown-item:focus, .dropdown-item:hover {
-    color: var(--bs-dropdown-link-hover-color);
-    background-color: orange;
-    /* background-color: var(--bs-dropdown-link-hover-bg); */
-}
+ .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    // transition-delay: 2s!important;
+ }
+ 
+ 
+ .dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+ }
+
+
+
+ .shop-header{
+   background-image: url(https://preview.colorlib.com/theme/karma/img/banner/banner-bg.jpg.webp);
+   //  background-repeat: no-repeat;
+   //  background-size: cover;
+    background-position: 100%;
+    background-position: right;
+background-size: auto;
+  
+ }

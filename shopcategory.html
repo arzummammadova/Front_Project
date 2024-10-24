@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+</head>
+
+<body>
+    <header class="shop-header">
+        <nav>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light header-nav-menu d-flex align-items-center">
+                    <a class="navbar-brand" href="">
+                        <img src="./assets/icons/logo.png.webp" alt="">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item " href="shopcategory.html">SHOP CATEGORY</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <div class="nav-icons">
+                                <i class="bi bi-bag"></i>
+                                <i class="bi bi-search"></i>
+                            </div>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+        <section id="hero">
+            <div class="container">
+
+                <div class="hero">
+                    <div class="row">
+                        <div class="col-7">
+
+                        </div>
+                        <div class="col-5 hero-text">
+                            <h2>Shop Category page</h2>
+                            <div class="hero-links">
+                                <a href="index.html">Home</a>
+                                <i class="bi bi-arrow-right"></i>
+                                <a href="shopcategory.html">Shop</a>
+                                <i class="bi bi-arrow-right"></i>
+                                <a href="index.html">Fashion Category</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+    <main>
+        <section id="category">
+            <div class="container">
+                <div class="category">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="category-part">
+
+                                <div class="filter">
+                                    <p style="background-color: #828bb3;">Browse Categories</p>
+
+
+                                    <ul class="list">
+                                        <li><a href="">Fruits and Vegetables</a><span>
+                                                (53)
+                                            </span></li>
+                                        <li><a href="">Meat and Fish </a> <span>
+                                                (53)
+                                            </span></li>
+                                        <li><a href="">Cooking </a><span>(53)</span></li>
+                                        <li><a href="">Beverages </a><span>(24)</span></li>
+                                        <li><a href="">Home and Cleaning </a><span>(53)</span></li>
+                                        <li><a href="">Pest Control</a><span>(24)</span></li>
+                                        <li><a href="">Office Products </a><span>(77)</span></li>
+                                        <li><a href="">Home and Cleaning </a><span>(53)</span></li>
+                                        <li><a href="">Pest Control</a><span>(24)</span></li>
+                                        <li><a href="">Office Products </a><span>(77)</span></li>
+                                        <li><a href="">Home Apliance </a><span>(15)</span></li>
+                                        <li><a href="">Baby Care</a><span>(48)</span></li>
+
+                                    </ul>
+
+                                </div>
+                                <div class="filter">
+                                    <p style="background-color: #828bb3;">Product Filters</p>
+                                    <h5>Brands</h5>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Apple(29)
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Asus(29)
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Gionee(19)
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Micromax(19)
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Samsung(19)
+                                        </label>
+
+                                    </div>
+
+                                </div>
+                                <div class="filter">
+
+                                    <h5>Color</h5>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Black(29)
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Black Leather(29)
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Black with red(19)
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Gold(19)
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Spacegrey(19)
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="filter">
+
+                                    <h5>PRICE</h5>
+                                    <div class="filter-text pt-5">
+                                        <a class="ms-5 filter-p" style="color: black;">Price: </a>
+                                        <span class="price-filter">
+                                            $
+                                            500.00
+                                            to
+                                            $
+                                            4000.00
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="category-header" style="background-color: #828bb3;">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected disabled>Default Sorting</option>
+                                            <option value="1">Default sorting</option>
+                                            <option value="2">Default Sorting</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-2">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected disabled>Show 12</option>
+                                            <option value="1">Show 12</option>
+                                            <option value="2">Show 12</option>
+
+                                        </select>
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+
+
+                            <section id="our-product" class="shop-product">
+                                <div class="container">
+                                    <div class="our-product">
+                                        <!-- <div class="our-product-text"> -->
+                                        <!-- <h2>Latest Product</h2>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore
+                                        magna aliqua.</p> -->
+                                        <!-- </div> -->
+                                        <div class="our-product-cards  shop-cards">
+                                            <div class="our-product-cards-card card-width">
+                                                <figure>
+                                                    <img src="./assets/images/p1.jpg.webp" alt="" class="shop-img">
+                                                </figure>
+
+                                                <p>Adidas a new hammer sole for sports person</p>
+                                                <div class="price-card">
+
+                                                    <p class="price">$150.00</p> <span>$210.00</span>
+
+
+
+                                                </div>
+                                                <div class="our-product-cards-card-icon">
+                                                    <div>
+                                                        <i class="bi bi-bag"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-arrow-repeat"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-arrows-move"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="our-product-cards-card card-width">
+                                                <figure>
+                                                    <img src="./assets/images/p2.jpg.webp" alt="">
+                                                </figure>
+
+                                                <p>Adidas a new hammer sole for sports person</p>
+                                                <div class="price-card">
+
+                                                    <p class="price">$150.00</p> <span>$210.00</span>
+
+
+
+                                                </div>
+                                                <div class="our-product-cards-card-icon">
+                                                    <div>
+                                                        <i class="bi bi-bag"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-arrow-repeat"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-arrows-move"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="our-product-cards-card card-width">
+                                                <figure>
+                                                    <img src="./assets/images/p3.jpg.webp" alt="">
+                                                </figure>
+
+                                                <p>Adidas a new hammer sole for sports person</p>
+                                                <div class="price-card">
+
+                                                    <p class="price">$150.00</p> <span>$210.00</span>
+
+
+
+                                                </div>
+                                                <div class="our-product-cards-card-icon">
+                                                    <div>
+                                                        <i class="bi bi-bag"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-arrow-repeat"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-arrows-move"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="our-product-cards-card card-width">
+                                                <figure>
+                                                    <img src="./assets/images/p4.jpg.webp" alt="">
+                                                </figure>
+
+                                                <p>Adidas a new hammer sole for sports person</p>
+                                                <div class="price-card">
+
+                                                    <p class="price">$150.00</p> <span>$210.00</span>
+
+
+
+                                                </div>
+                                                <div class="our-product-cards-card-icon ">
+                                                    <div>
+                                                        <i class="bi bi-bag"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-arrow-repeat"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-arrows-move"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="our-product-cards-card card-width">
+                                                <figure>
+                                                    <img src="./assets/images/p5.jpg.webp" alt="">
+                                                </figure>
+
+                                                <p>Adidas a new hammer sole for sports person</p>
+                                                <div class="price-card">
+
+                                                    <p class="price">$150.00</p> <span>$210.00</span>
+
+
+
+                                                </div>
+                                                <div class="our-product-cards-card-icon">
+                                                    <div>
+                                                        <i class="bi bi-bag"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-arrow-repeat"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-arrows-move"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="our-product-cards-card card-width">
+                                                <figure>
+                                                    <img src="./assets/images/p6.jpg.webp" alt="">
+                                                </figure>
+
+                                                <p>Adidas a new hammer sole for sports person</p>
+                                                <div class="price-card">
+
+                                                    <p class="price">$150.00</p> <span>$210.00</span>
+
+
+
+                                                </div>
+                                                <div class="our-product-cards-card-icon">
+                                                    <div>
+                                                        <i class="bi bi-bag"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-heart"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-arrow-repeat"></i>
+                                                    </div>
+                                                    <div>
+                                                        <i class="bi bi-arrows-move"></i>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                            </section>
+                            <div class="category-header" style="background-color: #828bb3;">
+                                <div class="row">
+
+                                    <div class="col-2">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected disabled>Show 12</option>
+                                            <option value="1">Show 12</option>
+                                            <option value="2">Show 12</option>
+
+                                        </select>
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="deals">
+            <div class="container">
+
+                <div class="deals">
+                    <div class="deals-header">
+                        <h2>Deals of the Week</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua.</p>
+                    </div>
+
+
+
+
+                    <div class="deals-cards">
+                        <div class="deals-cards-all">
+                            <div class="deals-card">
+                                <figure>
+                                    <img src="./assets/images/deals.jpg.webp" alt="">
+                                </figure>
+                                <div class="deals-card-text">
+                                    <p class="deals-card-text-p">Black Lace Heels</p>
+                                    <div class="price-card">
+
+                                        <p class="price">$150.00</p> <span>$210.00</span>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <figure>
+                                    <img src="./assets/images/deals2.jpg (1).webp" alt="">
+                                </figure>
+                                <div class="deals-card-text">
+                                    <p class="deals-card-text-p">Black Lace Heels</p>
+                                    <div class="price-card">
+
+                                        <p class="price">$150.00</p> <span>$210.00</span>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <figure>
+                                    <img src="./assets/images/deals3.jpg.webp" alt="">
+                                </figure>
+                                <div class="deals-card-text">
+                                    <p class="deals-card-text-p">Black Lace Heels</p>
+                                    <div class="price-card">
+
+                                        <p class="price">$150.00</p> <span>$210.00</span>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <figure>
+                                    <img src="./assets/images/deals4.jpg.webp" alt="">
+                                </figure>
+                                <div class="deals-card-text">
+                                    <p class="deals-card-text-p">Black Lace Heels</p>
+                                    <div class="price-card">
+
+                                        <p class="price">$150.00</p> <span>$210.00</span>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <figure>
+                                    <img src="./assets/images/deals5.jpg.webp" alt="">
+                                </figure>
+                                <div class="deals-card-text">
+                                    <p class="deals-card-text-p">Black Lace Heels</p>
+                                    <div class="price-card">
+
+                                        <p class="price">$150.00</p> <span>$210.00</span>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <figure>
+                                    <img src="./assets/images/deals6.jpg.webp" alt="">
+                                </figure>
+                                <div class="deals-card-text">
+                                    <p class="deals-card-text-p">Black Lace Heels</p>
+                                    <div class="price-card">
+
+                                        <p class="price">$150.00</p> <span>$210.00</span>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <figure>
+                                    <img src="./assets/images/deals8.jpg.webp" alt="">
+                                </figure>
+                                <div class="deals-card-text">
+                                    <p class="deals-card-text-p">Black Lace Heels</p>
+                                    <div class="price-card">
+
+                                        <p class="price">$150.00</p> <span>$210.00</span>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <figure>
+                                    <img src="./assets/images/deals9.jpg.webp" alt="">
+                                </figure>
+                                <div class="deals-card-text">
+                                    <p class="deals-card-text-p">Black Lace Heels</p>
+                                    <div class="price-card">
+
+                                        <p class="price">$150.00</p> <span>$210.00</span>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <figure>
+                                    <img src="./assets/images/deals10.jpg.webp" alt="">
+                                </figure>
+                                <div class="deals-card-text">
+                                    <p class="deals-card-text-p">Black Lace Heels</p>
+                                    <div class="price-card">
+
+                                        <p class="price">$150.00</p> <span>$210.00</span>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clock">
+                            <figure>
+                                <img src="./assets/images/c5.jpg.webp" alt="">
+                            </figure>
+                        </div>
+                    </div>
+
+                </div>
+
+        </section>
+
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer">
+                <div class="about-us">
+                    <h4>
+                        About Us
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        dolore magna aliqua.</p>
+                </div>
+                <div class="newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Stay update with our latest</p>
+                    <div class="newsletter-input">
+                        <input type="text" placeholder="Enter Email">
+                        <button><i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="insta">
+                    <h4>Instragram Feed</h4>
+                    <div class="insta-images">
+                        <figure>
+                            <img src="./assets/images/i1.jpg.webp" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./assets/images/i2.jpg.webp" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./assets/images/i3.jpg.webp" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./assets/images/i4.jpg.webp" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./assets/images/i5.jpg.webp" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./assets/images/i6.jpg.webp" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./assets/images/i7.jpg.webp" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./assets/images/i8.jpg.webp" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <p>Let us be social </p>
+                    <div class="sosial-network">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-dribbble"></i>
+                        <i class="bi bi-behance"></i>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="copyright">
+                <p>
+                    Copyright ©2024 All rights reserved <i class="bi bi-suit-heart"></i> This template is made with by
+                    <a href="">Colorlib</a>
+                </p>
+
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
