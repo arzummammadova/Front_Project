@@ -129,6 +129,7 @@ i {
                 content: "";
                 position: absolute;
                 top: 0;
+              
                 left: 0;
                 width: 100%;
                 height: 100%;
@@ -148,6 +149,7 @@ i {
                 transform: translateX(-50%);
                 color: white;
                 font-weight: 700;
+                text-align: center;
                 font-size: 1.4rem;
                 font-family: 'Poppins', sans-serif;
                 opacity: 0;
@@ -191,19 +193,23 @@ i {
                 content: url(https://preview.colorlib.com/theme/karma/img/product/prev.png);
                 margin-right: 1rem;
                 opacity: 0.5;
-               
+
             }
-            h2:hover:before{
+
+            h2:hover:before {
                 opacity: 1;
             }
+
             h2:after {
                 content: url(https://preview.colorlib.com/theme/karma/img/product/next.png);
                 margin-left: 1rem;
                 opacity: 0.5;
             }
-            h2:hover:after{
+
+            h2:hover:after {
                 opacity: 1;
             }
+
             &-text {
                 max-width: 45%;
                 text-align: center;
@@ -275,6 +281,7 @@ i {
         .shopnow {
             @include flex;
             gap: 6rem;
+            height: 80rem;
 
 
             &-leftside {
@@ -292,7 +299,7 @@ i {
                     // margin: 4rem auto;
                     @include flex;
                     margin: 0 auto;
-                    padding: 10rem 0rem;
+                    padding: 20rem 0rem;
                 }
 
                 .support {
@@ -330,11 +337,20 @@ i {
 
                     &::before {
                         content: url(https://preview.colorlib.com/theme/karma/img/product/prev.png);
+                        opacity: 0.5;
                     }
-
+                    &:hover::before{
+                        opacity: 1;
+                        transition: all 0.3s;
+                    }
                     &::after {
 
                         content: url(https://preview.colorlib.com/theme/karma/img/product/next.png);
+                        opacity: 0.5;
+                    }
+                    &:hover::after{
+                        opacity: 1;
+                        transition: all 0.3s;
                     }
 
                     img {
@@ -355,28 +371,201 @@ i {
 }
 
 
-#brands{
+#brands {
     padding: 9rem 0rem;
-    .container{
-        .brands{
+
+    .container {
+        .brands {
             @include flex;
-            figure{  width:calc(100%/5 - 1rem);
+            flex-wrap: wrap;
+
+            figure {
+                width: calc(100%/5 - 1rem);
                 object-fit: cover;
-             img{
-                opacity: 0.5;
-                &:hover{
-                    opacity: 1;
-                    transition: all 0.3s;
+
+                img {
+                    opacity: 0.5;
+
+                    &:hover {
+                        opacity: 1;
+                        transition: all 0.3s;
+                    }
                 }
-             }
             }
         }
     }
 }
 
+#deals {
+    padding: 10rem 0rem;
 
+    .container {
 
+        .deals {
+            &-header {
+                @include flex;
+                flex-direction: column;
+                max-width: 50rem;
+                text-align: center;
+                margin: 0 auto;
 
+                p {
+                    color: $p-color;
+                }
+            }
+
+            .clock {
+                width: 30%;
+
+                figure {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            &-cards {
+                display: flex;
+                margin-top: 5rem;
+
+                &-all {
+
+                    width: 70%;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+
+            &-card {
+                width: calc(100%/3);
+                flex-wrap: wrap;
+                display: flex;
+                gap: 3rem;
+
+                figure {
+                    width: calc(100%/3 - 3rem);
+                    height: 100%;
+                    object-fit: cover;
+
+                    img {
+
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+
+                &-text {
+                    &-p {
+
+                        font-weight: 500;
+
+                        &:hover {
+                            color: $primary;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#deals .container .deals-card {
+    display: flex;
+}
+
+#footer {
+    padding: 8rem 0rem;
+    background-color: $footer;
+
+    .container {
+
+        .footer {
+            display: flex;
+            // gap: 2rem;
+            width: 100%;
+            justify-content: space-between;
+
+            p {
+                color: $p-color;
+                font-size: 1.4rem !important;
+            }
+
+            .about-us {
+                width: 30rem;
+            }
+
+            .newsletter-input {
+                display: flex;
+                gap: 0;
+            }
+
+            .newsletter {
+                width: 30rem;
+
+                input {
+                    padding: 0.7rem 0.5rem;
+                    width: 83%;
+
+                }
+
+                button {
+                    background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+                    padding: 0.7rem 0.4rem;
+                    border: 1px solid #ffba00;
+
+                }
+
+                i {
+                    color: white;
+                }
+            }
+
+            .insta {
+                &-images {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 28.5rem;
+
+                    figure {
+                        width: 5.8rem;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                }
+
+            }
+
+            .follow {
+                .sosial-network {
+                    i {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        p {
+            color: $p-color;
+            font-size: 1.4rem;
+            margin-top: 4rem;
+            text-align: center;
+
+            i {
+                color: $primary;
+            }
+
+            a {
+                color: $primary;
+            }
+        }
+    }
+
+}
 
 
 
@@ -449,22 +638,50 @@ i {
     h2 {
         font-size: 2.6rem;
     }
+
     #shopnow .container-fluid .shopnow {
         flex-direction: column;
         gap: 0;
-        &-leftside{
+
+        &-leftside {
             width: 100%;
-            .support{
+
+            .support {
                 flex-wrap: nowrap;
             }
         }
-        &-rightside{
+
+        &-rightside {
             width: 100%;
         }
+    }
+
+    .clock {
+        display: none;
+    }
+
+    #deals .container .deals-cards-all {
+        width: 100%;
+    }
+
+    #footer .container .footer {
+        display: flex;
+        width: 100%;
+        gap: 6rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 }
 
 @media (max-width:756px) {
+    #deals .container .deals-card{
+        width: 100%;
+    }
+
+    #deals .container .deals-card figure{
+        width: fit-content;
+    }
+
     .our-product-cards-card {
 
         width: 100% !important;
@@ -500,10 +717,44 @@ i {
             left: 10px;
         }
     }
+
+    #footer .container .footer {
+
+        display: block;
+
+        .about-us,
+        .newsletter,
+        .insta,
+        .follow {
+            width: 100%;
+            margin-top: 3rem;
+        }
+
+        .insta-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        p {
+            text-align: left;
+        }
+
+    }
+
+    #brands .container .brands {
+        flex-direction: column;
+        gap: 3rem;
+    }
 }
 
 @media (max-width:570px) {
 
+
+    #shopnow .container-fluid .shopnow-leftside .support {
+        width: 63%;
+    }
 
     h1 {
         font-size: 3.5rem;
@@ -527,4 +778,10 @@ i {
 
 
     }
+
+    #footer .container p {
+
+        text-align: start;
+    }
+
 }

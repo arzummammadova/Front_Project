@@ -38,8 +38,7 @@ ul {
 figure {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .icons {
@@ -73,6 +72,13 @@ h3 {
   font-family: "Poppins", sans-serif;
   align-items: center;
   text-transform: uppercase;
+}
+
+h4 {
+  color: white;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 4rem;
 }
 
 p {
@@ -167,6 +173,29 @@ nav {
 
 .active {
   color: #ffba00 !important;
+}
+
+/*dropdown code*/
+.dropdown-item {
+  padding: 2rem 2rem !important;
+  display: block;
+  width: 100%;
+  /* padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x); */
+  clear: both;
+  font-weight: 400;
+  color: var(--bs-dropdown-link-color);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  border-radius: var(--bs-dropdown-item-border-radius, 0);
+}
+
+dropdown-item:focus, .dropdown-item:hover {
+  color: var(--bs-dropdown-link-hover-color);
+  background-color: orange;
+  /* background-color: var(--bs-dropdown-link-hover-bg); */
 }
 
 i {
@@ -292,6 +321,7 @@ i {
   transform: translateX(-50%);
   color: white;
   font-weight: 700;
+  text-align: center;
   font-size: 1.4rem;
   font-family: "Poppins", sans-serif;
   opacity: 0;
@@ -367,8 +397,7 @@ i {
 }
 #our-product .container .our-product-cards .our-product-cards-card figure img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #our-product .container .our-product-cards .our-product-cards-card p {
   font-size: 1.6rem;
@@ -402,6 +431,7 @@ i {
   justify-content: center;
   align-items: center;
   gap: 6rem;
+  height: 80rem;
 }
 #shopnow .container-fluid .shopnow-leftside {
   color: white;
@@ -419,7 +449,7 @@ i {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 10rem 0rem;
+  padding: 20rem 0rem;
 }
 #shopnow .container-fluid .shopnow-leftside .support {
   width: 100%;
@@ -449,14 +479,23 @@ i {
   width: 100%;
   height: 100%;
   text-align: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #shopnow .container-fluid .shopnow-rightside figure::before {
   content: url(https://preview.colorlib.com/theme/karma/img/product/prev.png);
+  opacity: 0.5;
+}
+#shopnow .container-fluid .shopnow-rightside figure:hover::before {
+  opacity: 1;
+  transition: all 0.3s;
 }
 #shopnow .container-fluid .shopnow-rightside figure::after {
   content: url(https://preview.colorlib.com/theme/karma/img/product/next.png);
+  opacity: 0.5;
+}
+#shopnow .container-fluid .shopnow-rightside figure:hover::after {
+  opacity: 1;
+  transition: all 0.3s;
 }
 #shopnow .container-fluid .shopnow-rightside figure img {
   width: 50%;
@@ -473,11 +512,11 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 #brands .container .brands figure {
   width: calc(20% - 1rem);
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #brands .container .brands figure img {
   opacity: 0.5;
@@ -485,6 +524,127 @@ i {
 #brands .container .brands figure img:hover {
   opacity: 1;
   transition: all 0.3s;
+}
+
+#deals {
+  padding: 10rem 0rem;
+}
+#deals .container .deals-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 50rem;
+  text-align: center;
+  margin: 0 auto;
+}
+#deals .container .deals-header p {
+  color: #777777;
+}
+#deals .container .deals .clock {
+  width: 30%;
+}
+#deals .container .deals .clock figure img {
+  width: 100%;
+  height: 100%;
+}
+#deals .container .deals-cards {
+  display: flex;
+  margin-top: 5rem;
+}
+#deals .container .deals-cards-all {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#deals .container .deals-card {
+  width: 33.3333333333%;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 3rem;
+}
+#deals .container .deals-card figure {
+  width: calc(33.3333333333% - 3rem);
+  height: 100%;
+  object-fit: cover;
+}
+#deals .container .deals-card figure img {
+  width: 70px;
+  height: 70px;
+}
+#deals .container .deals-card-text-p {
+  font-weight: 500;
+}
+#deals .container .deals-card-text-p:hover {
+  color: #ffba00;
+  transition: all 0.3s;
+}
+
+#deals .container .deals-card {
+  display: flex;
+}
+
+#footer {
+  padding: 8rem 0rem;
+  background-color: #222222;
+}
+#footer .container .footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#footer .container .footer p {
+  color: #777777;
+  font-size: 1.4rem !important;
+}
+#footer .container .footer .about-us {
+  width: 30rem;
+}
+#footer .container .footer .newsletter-input {
+  display: flex;
+  gap: 0;
+}
+#footer .container .footer .newsletter {
+  width: 30rem;
+}
+#footer .container .footer .newsletter input {
+  padding: 0.7rem 0.5rem;
+  width: 83%;
+}
+#footer .container .footer .newsletter button {
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  padding: 0.7rem 0.4rem;
+  border: 1px solid #ffba00;
+}
+#footer .container .footer .newsletter i {
+  color: white;
+}
+#footer .container .footer .insta-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 28.5rem;
+}
+#footer .container .footer .insta-images figure {
+  width: 5.8rem;
+}
+#footer .container .footer .insta-images figure img {
+  width: 100%;
+}
+#footer .container .footer .follow .sosial-network i {
+  color: white;
+}
+#footer .container p {
+  color: #777777;
+  font-size: 1.4rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+#footer .container p i {
+  color: #ffba00;
+}
+#footer .container p a {
+  color: #ffba00;
 }
 
 @media (max-width: 992px) {
@@ -515,8 +675,27 @@ i {
   #shopnow .container-fluid .shopnow-rightside {
     width: 100%;
   }
+  .clock {
+    display: none;
+  }
+  #deals .container .deals-cards-all {
+    width: 100%;
+  }
+  #footer .container .footer {
+    display: flex;
+    width: 100%;
+    gap: 6rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 @media (max-width: 756px) {
+  #deals .container .deals-card {
+    width: 100%;
+  }
+  #deals .container .deals-card figure {
+    width: fit-content;
+  }
   .our-product-cards-card {
     width: 100% !important;
   }
@@ -540,8 +719,34 @@ i {
     top: -25px;
     left: 10px;
   }
+  #footer .container .footer {
+    display: block;
+  }
+  #footer .container .footer .about-us,
+  #footer .container .footer .newsletter,
+  #footer .container .footer .insta,
+  #footer .container .footer .follow {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  #footer .container .footer .insta-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #footer .container .footer p {
+    text-align: left;
+  }
+  #brands .container .brands {
+    flex-direction: column;
+    gap: 3rem;
+  }
 }
 @media (max-width: 570px) {
+  #shopnow .container-fluid .shopnow-leftside .support {
+    width: 63%;
+  }
   h1 {
     font-size: 3.5rem;
   }
@@ -557,4 +762,7 @@ i {
   .card {
     width: 100%;
   }
-}/*# sourceMappingURL=main.css.map */
+  #footer .container p {
+    text-align: start;
+  }
+}
