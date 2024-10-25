@@ -1,0 +1,98 @@
+
+#footer {
+    padding: 8rem 0rem;
+    background-color: $footer;
+
+    .container {
+
+        .footer {
+            display: flex;
+            // gap: 2rem;
+            width: 100%;
+            justify-content: space-between;
+
+            p {
+                color: $p-color;
+                font-size: 1.4rem !important;
+            }
+
+            .about-us {
+                width: 30rem;
+            }
+
+            .newsletter-input {
+                display: flex;
+                gap: 0;
+            }
+
+            .newsletter {
+                width: 30rem;
+
+                input {
+                    padding: 0.7rem 0.5rem;
+                    width: 83%;
+
+                }
+
+                button {
+                    background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+                    padding: 0.7rem 0.4rem;
+                    border: 1px solid #ffba00;
+
+                }
+
+                i {
+                    color: white;
+                }
+            }
+
+            .insta {
+                &-images {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 28.5rem;
+
+                    figure {
+                        width: 5.8rem;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                }
+
+            }
+
+            .follow {
+                .sosial-network {
+                    i {
+                        cursor: pointer;
+                        color: white;
+                        &:hover{
+                            transition: all 0.3s;
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            color: $p-color;
+            font-size: 1.4rem;
+            margin-top: 4rem;
+            text-align: center;
+
+            i {
+                color: $primary;
+            }
+
+            a {
+                color: $primary;
+            }
+        }
+    }
+
+}

@@ -1,8 +1,108 @@
-#login{
-    .container{
-        .login-left-side{
-            background-image: url(https://preview.colorlib.com/theme/karma/img/login.jpg);
-            background-repeat: no-repeat;
+#login {
+    padding: 8rem 0rem;
+
+    .container {
+        .login {
+            display: flex;
+            gap: 4rem;
+
+            .login-left-side {
+                width: 50%;
+
+                h3 {
+                    font-size: 2rem;
+                    text-transform: none;
+                    margin-bottom: 0px;
+
+                }
+
+                .left-side-desc {
+                    font-size: 1.2rem;
+                    margin-top: 3rem;
+                }
+
+                .btn-p {
+                    padding: 0.4rem 2rem !important;
+                    font-size: 1.5rem !important;
+                }
+
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://preview.colorlib.com/theme/karma/img/login.jpg');
+
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 10rem 0rem;
+
+                &-text {
+                    @include flex();
+                    flex-direction: column;
+                    max-width: 60%;
+                    text-align: center;
+                    color: $text-color-white;
+                    margin: 0rem auto;
+                }
+            }
+
+            &-right-side {
+                padding-top: 10rem;
+                width: 50%;
+                &-text{
+                    display: flex;
+                    gap: 1.7rem;
+                    justify-content: start;
+                  
+                    justify-content: start;
+                    flex-direction: column;
+                    width: 75%;
+                    margin: 0 auto;
+                    p {
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-size: 2.5rem;
+                    }
+                    a{
+                        color: $p-color!important;
+                        display: block;
+                       
+                    text-align: center;
+                    font-weight: 400;
+                    }
+                }
+
+               
+              
+
+
+            }
         }
+
     }
+}
+
+.login-right-side input[type="password"],
+.login-right-side input[type="text"] {
+    width: 100%;
+    display: block;
+    padding: 1.2rem 2.5rem;
+    border: none;
+    border-bottom: 1px solid grey;
+    &:focus{
+       ::placeholder{
+        display: none;
+       }
+        outline: none;
+    }
+
+   
+}
+.login-right-side input[type="form-check"] {
+    margin-top: 4rem;
+  
+
+}
+
+label{
+    font-family: "Poppins",sans-serif;
+    font-size: 1.4rem;
+    color: $p-color;
 }

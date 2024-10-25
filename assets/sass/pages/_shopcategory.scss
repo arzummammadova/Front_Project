@@ -1,7 +1,7 @@
 #hero {
     .container {
       color: white;
-      padding: 5rem 0rem;
+      padding-bottom: 8rem;
   
       .hero {
         &-text {
@@ -31,7 +31,7 @@
   }
   
   #category {
-    padding-top: 15rem;
+    padding-top: 12rem;
     .container {
       .category {
         .row {
@@ -145,6 +145,56 @@
               }
             }
           }
+
+        .col-4{
+      
+          flex: 1 1 auto;
+           align-items: flex-end;
+          width: 41.66666667%;
+          justify-content: flex-end;
+          align-items: flex-end;
+          display: flex;
+        
+        
+          // .pagination {
+          //   display: inline-block;
+          // }
+          
+          .pagination a {
+         
+           font-weight: 400;
+            background-color: $text-color-white;
+            // color: $text-color-white;
+            float: left;
+            padding: 4px 12px;
+            text-decoration: none;
+            transition: background-color .3s;
+            font-size: 1.7rem;
+            i{
+margin: 0!important;
+              font-size: 1.3rem!important;
+
+            }
+          }
+          .empty{
+            font-weight: 700!important;
+        padding-bottom: 40%;
+
+            background-color: 
+            transparent!important;
+            &:hover{
+              background-color: transparent!important;
+            }
+          }
+          .pagination a.active {
+                 background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+            color: white!important;
+          }
+          
+          .pagination a:hover:not(.active):not(.empty)  { background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+            color: white!important;
+          }
+        }  
         }
       }
     }
@@ -174,25 +224,35 @@
     gap: 2rem;
 }
 
+#our-product .container .our-product-cards {
+  gap: 3rem;}
+
 .card-width{
     width: calc(100% / 3 - 2rem);
 }
 
-  @media (max-width: 992px) {
+  @media (max-width:883px) {
     #category {
       .container {
         .category {
           .row {
             .col-3 {
-              width: 33.3333%; /* col-4 layout for 992px */
+              width: 33.3333%; 
             }
   
             .col-9 {
-              width: 66.6666%; /* Adjust accordingly */
+              width: 66.6666%; 
             }
           }
         }
       }
+    }
+
+    #category .container .category .row .col-4{
+      align-self: flex-start;
+      justify-content: flex-start;
+      margin-top: 3rem;
+     
     }
   }
   
