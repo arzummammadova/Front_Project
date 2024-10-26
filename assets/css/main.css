@@ -1533,7 +1533,18 @@ label {
   .revieww {
     margin-top: 50rem;
   }
-  .col-md-12 {
-    margin-top: 50rem;
+}
+@media (max-width: 576px) {
+  .col-6 {
+    display: block !important;
+    width: 100%;
+  }
+  .col-6 {
+    flex: 0 0 auto;
+    width: 100% !important;
+  }
+  col-6 {
+    flex: 0 0 auto;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
