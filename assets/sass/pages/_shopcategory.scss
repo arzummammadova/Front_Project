@@ -6,14 +6,19 @@
       .hero {
         &-text {
           color: white;
+          display: flex;
+          justify-content: start;
+          align-items: start;
+          flex-direction: column;
+          padding-left: 8rem;
   
           h2 {
             font-weight: 700;
-            padding-left: 8rem;
+            // padding-left: 8rem;
           }
   
           .hero-links {
-            padding-left: 10rem;
+            // padding-left: 10rem;
   
             a {
               font-size: 1.2rem;
@@ -230,6 +235,19 @@ margin: 0!important;
 .card-width{
     width: calc(100% / 3 - 2rem);
 }
+@media(max-width:992px){
+  hero-text {
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 8rem;
+  }
+}
+
+
+
 
   @media (max-width:883px) {
     #category {

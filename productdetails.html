@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+</head>
+
+<body>
+    <header class="shop-header">
+        <nav>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light header-nav-menu d-flex align-items-center">
+                    <a class="navbar-brand" href="">
+                        <img src="./assets/icons/logo.png.webp" alt="">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item " href="shopcategory.html">SHOP CATEGORY</a></li>
+                                    <li><a class="dropdown-item" href="productdetails.html">Product Details</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <div class="nav-icons">
+                                <i class="bi bi-bag"></i>
+                                <i class="bi bi-search"></i>
+                            </div>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+        <section id="hero">
+            <div class="container">
+
+                <div class="hero">
+                    <div class="row">
+                        <div class="col-7">
+
+                        </div>
+                        <div class="col-5  hero-text">
+                            <h2>Product Details Page</h2>
+                            <div class="hero-links">
+                                <a href="index.html">Home</a>
+                                <i class="bi bi-arrow-right"></i>
+                                <a href="shopcategory.html">Shop</a>
+                                <i class="bi bi-arrow-right"></i>
+                                <a href="productdetails.html">Product-details</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </header>
+    <section id="product-details">
+
+        <div class="container">
+            <div class="product-details ">
+                <div class="   product-details-left ">
+                    <figure>
+                        <img src="./assets/icons/detailsi.png" alt="">
+                    </figure>
+
+                </div>
+                <div class=" product-details-right">
+                    <div class="product-right-side">
+                        <p class="details-text">Faded SkyBlu Denim Jeans</p>
+                        <p class="details-price">
+                            $149.99
+                        </p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <a href="" style="color: #7B6454;">Category</a>
+                                </td>
+                                <td>
+                                    <a href="" style="color: #FF8700;">:House hold</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">Aviability </a>
+                                </td>
+                                <td>
+                                    <a href="">:in stock</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="details-desc">Mill Oil is an innovative oil filled radiator with the most modern
+                            technology. If you are looking for something that can make your interior look awesome, and
+                            at the same time give you the pleasant warm feeling during the winter.</p>
+                        <div class="details-num">
+                            <span class="details-num-text">
+                                Quantity
+                            </span>
+                            <input type="number" min="1" placeholder="1" class="always-visible">
+
+                        </div>
+                        <div class="details-icon-btn">
+                            <button class="details-btn button ">
+                                ADD TO CARD
+                            </button>
+                            <div class="detail-card-icons">
+                                <div>
+                                    <i class="bi bi-gem"></i>
+                                </div>
+                                <div>
+                                    <i class="bi bi-heart"></i>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="bos">
+        <!-- jfhierh -->
+    </section>
+    <section id="product-inner">
+        <div class="container">
+            <div class="product-inner">
+                <div class="product-inner-header">
+                    <div class="row">
+                        <div class="col-2">
+
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+
+                                <div class="col-2"><button>Desciption</button></div>
+                                <div class="col-2"><button>Specification</button></div>
+                                <div class="col-2"><button>Comments</button></div>
+                                <div class="col-2"><button class="active-inner">Reviews</button></div>
+                            </div>
+                        </div>
+                        <div class="col-2"></div>
+
+                    </div>
+
+                </div>
+                <div class="product-inner-bottom">
+                    <div class="row" style="height:210px;">
+                        <div class="col-6 " >
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="box">
+                                        <h3>Overall</h3>
+                                        <p class="score">4.0</p>
+                                        <p class="score-desc">
+                                            (03 Reviews)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <p class="star-title">Based on 3 Reviews</p>
+                                    <a href="">5 star <span>
+                                            ★★★★★
+                                        </span>01 </a>
+                                    <a href="">4 star <span>
+                                            ★★★★★
+                                        </span>01 </a>
+                                    <a href="">3 star <span>
+                                            ★★★★★
+                                        </span>01 </a>
+                                    <a href="">2 star <span>
+                                            ★★★★★
+                                        </span>01 </a>
+                                    <a href="">1 star <span>
+                                            ★★★★★
+                                        </span>01 </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12  col-sm-12 addreview">
+                            <h3 class="review">Add a Review</h3>
+                            <a href="">Your Rating: &nbsp; &nbsp; <span>★★★★★ &nbsp; &nbsp;</span> Outstanding</a>
+                            <br/>
+                            <input type="text" placeholder="Your Full Name">
+                            <input type="email" placeholder="Email address" required>
+                            <input type="tel" placeholder="Phone number">
+                            <textarea placeholder="Review"></textarea>
+                            <div class="row rowbtn btndetails">
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <button class="buttonsqr sendbtn">SUBMIT NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-lg-6 col-sm-12">
+                            <div class="inner-card">
+                                <div class="inner-card-top">
+                                    <div class="inner-card-desc">
+
+                                        <img src="./assets/images/inner1.png.webp" alt="" class="inner-img">
+                                        <div class="innner-card-score">
+                                            <p class="inner-card-name">Blake Ruiz</p>
+                                            <p class="star"> ★★★★★</p>
+                                        </div>
+
+                                    </div>
+                                    <p class="inner-card-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="inner-card">
+                                <div class="inner-card-top">
+                                    <div class="inner-card-desc">
+
+                                        <img src="./assets/images/inner2.png.webp" alt="" class="inner-img">
+                                        <div class="innner-card-score">
+                                            <p class="inner-card-name">Blake Ruiz</p>
+                                            <p class="star"> ★★★★★</p>
+                                        </div>
+
+                                    </div>
+                                    <p class="inner-card-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="inner-card">
+                                <div class="inner-card-top">
+                                    <div class="inner-card-desc">
+
+                                        <img src="./assets/images/inner3.png.webp" alt="" class="inner-img">
+                                        <div class="innner-card-score">
+                                            <p class="inner-card-name">Blake Ruiz</p>
+                                            <p class="star"> ★★★★★</p>
+                                        </div>
+
+                                    </div>
+                                    <p class="inner-card-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
