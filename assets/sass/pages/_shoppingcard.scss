@@ -1,0 +1,362 @@
+.productcardbanner {
+    padding: 8rem 0rem;
+    font-family: "Roboto";
+
+    .thead tr td {
+        color: $p-color;
+    }
+
+    .cart-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+
+        th {
+            text-align: left;
+            padding: 10px;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: $p-color;
+            font-family: "Roboto";
+            border-bottom: 1px solid #ddd;
+        }
+
+        td {
+            padding: 2rem;
+            border-bottom: 1px solid #ddd;
+            vertical-align: middle;
+        }
+
+        .product {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 15rem;
+                height: auto;
+                margin-right: 15px;
+            }
+
+            span {
+                font-size: 1.4rem;
+                color: $p-color;
+                font-family: "Roboto";
+            }
+        }
+
+        .price, .total {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .quantity {
+            input[type="number"] {
+                width: 50px;
+                padding: 5px;
+                text-align: center;
+            }
+        }
+    }
+
+    span {
+        font-weight: 400;
+        text-decoration: none;
+        color: $p-color;
+    }
+
+    .cart-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .update-cart {
+            background-color: #E8F0F2;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .coupon {
+            display: flex;
+            align-items: center;
+
+            input[type="text"] {
+                padding: 1rem 2rem;
+                border: 1px solid #ddddddc3;
+                margin-right: 5px;
+                font-size: 16px;
+                color: $p-color;
+            }
+
+            .apply {
+                background-image: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+                color: white;
+                padding: 1rem 3rem;
+                border: none;
+                cursor: pointer;
+                text-transform: uppercase;
+            }
+
+            .close-coupon {
+                background-color: #E8F0F2;
+                padding: 1rem 3rem;
+                border: none;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .cart-summary {
+        width: 100%;
+        margin-top: 20px;
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+
+        .card-summary-width {
+            padding-bottom: 3rem;
+            text-align: end;
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .subtotal {
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+
+        span {
+            font-size: 1.4rem;
+            color: black;
+            font-weight: 500;
+            font-family: "Roboto";
+        }
+    }
+
+    .shipping {
+        width: 30%;
+        display: flex;
+
+        justify-content: space-between;
+
+        span {
+            font-weight: 500;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            display: inline-block;
+            color: black;
+            font-family: "Roboto";
+        }
+
+        .shipping-input {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-self: flex-end;
+        }
+
+        .form-check {
+            padding-top: 1.5rem;
+
+            .form-check-input:checked {
+                background-color: $primary;
+                border-color: $primary;
+            }
+
+            .form-check-input:focus {
+                border-color: rgba(241, 166, 25, 0.502);
+                outline: 0;
+                transition: box-shadow 1s ease, border-color 0.3s ease;
+                box-shadow: 0 0 0 .7rem rgba(253, 185, 13, 0.25);
+            }
+
+            .form-check-input:focus:not(:focus-visible) {
+                transition: box-shadow 1s ease-in;
+            }
+
+            input {
+                margin-left: 1.5rem;
+                margin-top: 1rem;
+            }
+
+            label {
+                margin-left: 1rem;
+                padding: 0.3rem 0rem;
+                cursor: pointer;
+                color: $p-color;
+            }
+        }
+
+        label {
+            display: block;
+            margin: 5px 0;
+            font-size: 14px;
+
+            input[type="radio"] {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .calculate-shipping {
+        margin-top: 20px;
+
+        .toggle {
+            background: none;
+            border: none;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            margin-bottom: 10px;
+            padding: 0;
+            font-size: 1.4rem;
+            color: black;
+            text-align: end;
+            font-weight: 400;
+        }
+
+        .shipping-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            select, input[type="text"] {
+                padding: 1rem 10rem 1rem 1rem;
+                border: 1px solid #ddd;
+                border-radius: .3rem;
+                background-color: #E8F0F2;
+                font-size: 14px;
+                color: $p-color;
+            }
+
+            .update-details {
+                background-color: #E8F0F2;
+                border: none;
+                padding: .5rem 1rem;
+                font-weight: 500;
+                font-size: 1.4rem;
+                width: 60%;
+                align-self: flex-end;
+                cursor: pointer;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .checkout-actions {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+
+        .continue-shopping, .proceed-checkout {
+            padding: 1rem 3rem;
+            font-size: 1.4rem;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .continue-shopping {
+            background-color: #f1f1f1;
+        }
+
+        .proceed-checkout {
+            background-image: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+            color: white;
+        }
+    }
+
+    // Responsive styles
+    @media (max-width: 1200px) {
+        padding: 5rem 0;
+
+        .cart-summary {
+            .subtotal {
+                width: 100%;
+            }
+
+            .shipping {
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .cart-actions {
+            flex-direction: column;
+
+            .update-cart {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .coupon {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+
+        .checkout-actions {
+            flex-direction: column;
+
+            .continue-shopping,
+            .proceed-checkout {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .product {
+            flex-direction: column;
+            align-items: flex-start;
+
+            img {
+              width: 7rem!important;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .productcardbanner .cart-table .product img {
+            width: 9rem;}
+        .cart-table {
+            th, td {
+                padding: 1rem; // Adjust padding for smaller screens
+                font-size: 1.2rem; // Adjust font size
+            }
+
+            .product {
+                span {
+                    font-size: 1.2rem; // Adjust font size for product name
+                }
+            }
+
+            .quantity {
+                input[type="number"] {
+                    width: 40px; // Adjust width for smaller screens
+                }
+            }
+        }
+
+        .cart-summary {
+            .card-summary-width {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
+}
+

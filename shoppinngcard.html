@@ -2,113 +2,231 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <!-- poppins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
 
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light header-nav-menu d-flex align-items-center">
-          <a class="navbar-brand" href="">
-            <img src="./assets/icons/logo.png.webp" alt="">
-          </a>
+    <header class="shop-header">
+        <nav>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light header-nav-menu d-flex align-items-center">
+                    <a class="navbar-brand" href="">
+                        <img src="./assets/icons/logo.png.webp" alt="">
+                    </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item  active">
-                <a class="nav-link active" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Shop
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="shopcategory.html">SHOP CATEGORY</a></li>
-                  <li><a class="dropdown-item" href="productdetails.html">Product Details</a></li>
-                  <li><a class="dropdown-item" href="shoppinngcard.html">Shopping Card</a></li>
-                 
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Pages
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="login.html">Login</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <div class="nav-icons">
-                <i class="bi bi-bag"></i>
-                <i class="bi bi-search"></i>
-              </div>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item " href="shopcategory.html">SHOP CATEGORY</a></li>
+                                    <li><a class="dropdown-item" href="productdetails.html">Product Details</a></li>
+                                    <li><a class="dropdown-item " href="shoppinngcard.html">Shopping Card</a></li>
 
-            </ul>
-          </div>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <div class="nav-icons">
+                                <i class="bi bi-bag"></i>
+                                <i class="bi bi-search"></i>
+                            </div>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </nav>
-      </div>
-    </nav>
-    <section id="banner">
-      <div class="container">
-        <div class="banner">
-          <div class="banner-left-side">
-            <h1>Nike New Collaction!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat sunt aperiam quasi alias, mollitia
-              explicabo exercitationem earum cupiditate illum nihil.</p>
-            <div class="add mt-5">
-              <div class="addicon ">
-                <i class="bi bi-plus"></i>
-              </div>
-              <p class="mt-3">Add to bag</p>
+        <section id="hero">
+            <div class="container">
+
+                <div class="hero">
+                    <div class="row">
+                        <div class="col-7">
+
+                        </div>
+                        <div class="col-5  hero-text">
+                            <h2>Shopping Card </h2>
+                            <div class="hero-links">
+                                <a href="index.html">Home</a>
+                                <i class="bi bi-arrow-right"></i>
+                                <a href="shoppinngcard.html">Cart</a>
+                             
+                             
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
-          </div>
-          <div class="banner-right-side">
-            <figure>
-              <img src="./assets/images/banner-img.png.webp" alt="">
-            </figure>
+        </section>
+    </header>
+
+
+    <main>
+      <section class="productbanner">
+        <div class="container">
+            <div class="productcardbanner">
+        
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="product">
+                <img src="./assets/images/cart.jpg.webp" alt="Blackberry">
+                <span>Minimalistic shop for multipurpose use</span>
+              </td>
+              <td class="price">$360.00</td>
+              <td class="quantity">
+                <input type="number" value="1" min="1">
+              </td>
+              <td class="total">$720.00</td>
+            </tr>
+            <tr>
+              <td class="product">
+                <img src="./assets/images/cart.jpg.webp" alt="Blackberry">
+                <span>Minimalistic shop for multipurpose use</span>
+              </td>
+              <td class="price">$360.00</td>
+              <td class="quantity">
+                <input type="number" value="1" min="1">
+              </td>
+              <td class="total">$720.00</td>
+            </tr>
+            <tr>
+              <td class="product">
+                <img src="./assets/images/cart.jpg.webp" alt="Blackberry">
+                <span>Minimalistic shop for multipurpose use</span>
+              </td>
+              <td class="price">$360.00</td>
+              <td class="quantity">
+                <input type="number" value="1" min="1">
+              </td>
+              <td class="total">$720.00</td>
+            </tr>
+        
+          </tbody>
+        </table>
+        
+        <div class="cart-actions">
+          <button class="update-cart">Update Cart</button>
+          <div class="coupon">
+            <input type="text" placeholder="Coupon Code">
+            <button class="apply">Apply</button>
+            <button class="close-coupon">Close Coupon</button>
           </div>
         </div>
-
-
-      </div>
-    </section>
-
-  </header>
+        <div class="cart-summary">
+          <div class="card-summary-width">
+            <div class="subtotal">
+            <span>Subtotal</span>
+            <span class="amount">$2160.00</span>
+          </div> 
+          
+          <div class="shipping">
+            <span>Shipping</span>
+            <div class="shiiping-input">
+              <label>Flat Rate: $5.00 <input type="radio" name="shipping" value="5"></label>
+              <label>Free Shipping <input type="radio" name="shipping" value="0"></label>
+              <label>Flat Rate: $10.00 <input type="radio" name="shipping" value="10"></label>
+              <label>Local Delivery: $2.00 <input type="radio" name="shipping" value="2" checked></label>
+            </div>
+</div>            
+      
+          <div class="calculate-shipping">
+            <button class="toggle">
+              Calculate Shipping 
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 10l5 5 5-5H7z" fill="currentColor"/>
+              </svg>
+            </button>
+            
+            <div class="shipping-form">
+              <select>
+                <option>Bangladesh</option>
+                <option>Bangladesh</option>
+                <option>Bangladesh</option>
+              </select>
+              <select>
+                <option>Select a State</option>
+                <option>Bangladesh</option>
+                  <option>Bangladesh</option>
+              </select>
+              <input type="text" placeholder="Postcode/Zipcode">
+              <button class="update-details">Update Details</button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="checkout-actions">
+          <button class="continue-shopping">Continue Shopping</button>
+          <button class="proceed-checkout">Proceed to Checkout</button>
+        </div> 
+          </div>
+        
+      
+       </div> 
+        </div>
+        
+      
+      </section>
+   
+    </main>
