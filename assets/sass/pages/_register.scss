@@ -1,0 +1,25 @@
+.pasword-p{
+    font-size: 1.5rem!important;
+    text-transform:none!important;
+   
+    a{
+     
+        font-weight: 400;
+        color: $primary;
+        &:hover{
+            color: $red;
+            transition: all 1s;
+        }
+    }
+}
+.register-input{
+    padding: 1rem 1rem!important;
+}
+
+.register-left{
+    margin: 10rem auto!important;
+    h3{
+        font-size: 3rem!important;
+        width: 100%;
+    }
+}

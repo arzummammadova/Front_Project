@@ -166,6 +166,7 @@
                 }
 
                 .search {
+                    margin-top: 2rem;
                     width: 95%;
                     padding: 0.8rem 1.4rem;
                     padding-right: 4rem;
@@ -174,9 +175,13 @@
                     background-color: #FFBA00;
                     border-radius: 2rem;
                     color: $text-color-white;
+                    &::placeholder{
+                        color: white;
+                    }
                 }
 
                 .search-icon {
+                    margin-top: 1rem;
                     position: absolute;
                     right: 4.4rem;
                     top: 50%;
@@ -392,5 +397,29 @@ background: #ffba00 !important;
           border:1px solid $line-color;
         }
       }
+    }
+  }
+
+
+  @media (max-width:756px){
+    .blog-inner .container .blog-pages-inner{
+        display:block;
+    }
+    .left-side-withicon{
+        display: none;
+    }
+    .blog-pages-inner-left-left-side p,.blog-icon
+    { display: none!important;}
+    #blog-images .container .blog-images{
+        flex-direction: column;
+    }
+    #blog-images .container .blog-images-box{
+        width: 100%;
+    }
+    .blog-inner .container .blog-pages-inner .blog-pages-inner-left .blog-pages-inner-left-left-side {
+        width: 0;
+    }
+    .blog-inner .container .blog-pages-inner .blog-pages-inner-left {
+       gap: 0rem;
     }
   }

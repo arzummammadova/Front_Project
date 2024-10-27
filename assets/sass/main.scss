@@ -16,24 +16,16 @@
 @import "layout/footer";
 @import "layout/navigation";
 
-// @import "layout/grid";
 
 // Pages     
 
 @import "pages/home";
-@import "pages/about";
 @import "pages/contact";
-@import "pages/products";
+// @import "pages/products";
 @import "pages/shopcategory";
 @import "pages/login";
 @import "pages/productdetails";
 @import "pages/shoppingcard";
 @import "pages/blog";
-
-// // Themes ;
-// @import "themes/default";
-// @import "themes/dark";
-// @import "themes/light";
-
-// // Vendors
-// @import "vendors/bootsrap.sass";
+@import "pages/blogdetails";
+@import "pages/register";
