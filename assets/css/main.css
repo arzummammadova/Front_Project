@@ -74,8 +74,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3.6rem;
-  margin-bottom: 30px;
+  font-size: 2.7rem;
   margin-top: 1.5rem;
   font-family: "Poppins", sans-serif;
   align-items: center;
@@ -125,15 +124,39 @@ span {
 }
 
 .button {
-  padding: 1rem 3rem;
+  padding: 1rem 2.5rem;
   color: white;
   background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-top: 4rem;
   border-radius: 3rem;
   border: 1px solid #ffba00;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 120%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.283);
+  transform: skew(30deg) translateX(-100%);
+  opacity: 0;
+  transition: transform 0.2s cubic-bezier(0.3, 1, 0.8, 1), opacity 0.2s ease;
+  z-index: 1;
+}
+.button:hover::before {
+  transform: skew(30deg) translateX(0);
+  opacity: 1;
+}
+.button span {
+  position: relative;
+  z-index: 2;
 }
 
 .buttonsqr {
@@ -155,6 +178,40 @@ span {
   font-size: 1.4rem;
   margin: 4rem 0rem;
   font-family: "Roboto";
+}
+
+.btnsqr {
+  padding: 1rem 3rem;
+  color: white;
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  font-size: 1.8rem;
+  margin-top: 4rem;
+  border: 1px solid #ffba00;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+.btnsqr::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 120%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.283);
+  transform: skew(30deg) translateX(-100%);
+  opacity: 0;
+  transition: transform 0.2s cubic-bezier(0.3, 1, 0.8, 1), opacity 0.2s ease;
+  z-index: 1;
+}
+.btnsqr:hover::before {
+  transform: skew(30deg) translateX(0);
+  opacity: 1;
+}
+.btnsqr span {
+  position: relative;
+  z-index: 2;
 }
 
 header {
@@ -334,8 +391,8 @@ nav {
 }
 #footer .container p {
   color: #777777;
-  font-size: 1.4rem;
-  margin-top: 4rem;
+  font-size: 1.3rem;
+  margin-top: 6rem;
   text-align: center;
 }
 #footer .container p i {
@@ -440,6 +497,8 @@ i {
   position: relative;
 }
 #image-gallery .boxes .box img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
   transition: filter 0.3s ease-in-out;
@@ -666,6 +725,7 @@ i {
   width: calc(20% - 1rem);
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
 #brands .container .brands figure img {
   opacity: 0.5;
@@ -857,6 +917,55 @@ i {
     width: 100%;
   }
 }
+.our-product-cards-card-icon {
+  display: flex;
+  align-items: center;
+}
+.our-product-cards-card-icon .icon-container {
+  position: relative;
+  width: 30px;
+  margin-right: 0.7rem;
+  height: 30px;
+  background-color: #828BB2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 1s;
+}
+.our-product-cards-card-icon .icon-container:hover {
+  transition: all 0.3s;
+  background-image: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+}
+.our-product-cards-card-icon .icon-container i {
+  font-size: 1.2rem;
+  color: white;
+}
+.our-product-cards-card-icon .icon-label {
+  display: none;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #333;
+  white-space: nowrap;
+  text-transform: uppercase;
+  transition: all 1s;
+}
+.our-product-cards-card-icon .icon-label.show {
+  display: block;
+  transform: translateX(10);
+}
+.our-product-cards-card-icon .icon-container:hover + .icon-label {
+  display: block;
+  transition: all 0.3s;
+}
+
+.form-select:focus {
+  border-color: white;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem white;
+}
+
 iframe {
   width: 100%;
   height: 60rem;
@@ -1045,6 +1154,10 @@ iframe {
   padding-top: 1.5rem;
 }
 #category .container .category .row .col-3 .category-part .filter .form-check .form-check-input:checked {
+  background-color: #ffba00;
+  border-color: #ffba00;
+}
+#category .container .category .row .col-3 .category-part .filter .form-check .active-check {
   background-color: #ffba00;
   border-color: #ffba00;
 }
@@ -2210,6 +2323,44 @@ label {
     gap: 0rem;
   }
 }
+.paginationn {
+  padding: 5rem 0rem 10rem 5rem;
+}
+
+.paginationn a {
+  color: #777777;
+  font-weight: 400;
+  background-color: white;
+  font-size: 1.4rem;
+  float: left;
+  padding: 4px 12px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.paginationn a i {
+  margin: 0 !important;
+  font-size: 1.3rem !important;
+}
+
+.empty {
+  font-weight: 700 !important;
+  padding-bottom: 40%;
+  background-color: transparent !important;
+}
+.empty:hover {
+  background-color: transparent !important;
+}
+
+.paginationn a.active {
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  color: white !important;
+}
+
+.paginationn a:hover:not(.active):not(.empty) {
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  color: white !important;
+}
+
 .blog-detail {
   margin: 9rem 0rem;
 }
@@ -2260,8 +2411,14 @@ label {
 }
 
 .color-sosial-blog {
-  opacity: 0.5;
   margin-top: 3rem;
+}
+.color-sosial-blog i {
+  opacity: 0.5;
+}
+.color-sosial-blog i:hover {
+  opacity: 1;
+  transition: all 0.3s;
 }
 
 .p-desc-box {
@@ -2482,7 +2639,7 @@ label {
 }
 
 .blog-inner .container .blog-pages-inner .blog-pages-inner-left {
-  flex: 0 0 50%;
+  flex: 0 0 70%;
 }
 
 @media (max-width: 576px) {

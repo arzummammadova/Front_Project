@@ -334,19 +334,19 @@
             width: 9rem;}
         .cart-table {
             th, td {
-                padding: 1rem; // Adjust padding for smaller screens
-                font-size: 1.2rem; // Adjust font size
+                padding: 1rem; 
+                font-size: 1.2rem; 
             }
 
             .product {
                 span {
-                    font-size: 1.2rem; // Adjust font size for product name
+                    font-size: 1.2rem; 
                 }
             }
 
             .quantity {
                 input[type="number"] {
-                    width: 40px; // Adjust width for smaller screens
+                    width: 40px; 
                 }
             }
         }
@@ -359,4 +359,6 @@
         }
     }
 }
+
+
 

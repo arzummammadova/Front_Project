@@ -1,14 +1,45 @@
-.button{
-  padding: 1rem 3rem;
+.button {
+  padding: 1rem 2.5rem;
   color: $text-color-white;
   background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-top: 4rem;
   border-radius: 3rem;
   border: 1px solid $primary;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.283);
+    transform: skew(30deg) translateX(-100%); 
+    opacity: 0;
+    transition: transform 0.2s cubic-bezier(0.3, 1, 0.8, 1), opacity 0.2s ease;
+    z-index: 1;
+  }
+
+  &:hover::before {
+    transform: skew(30deg) translateX(0);
+    opacity: 1;
+  }
+
+  span {
+    position: relative;
+    z-index: 2;
+  }
 }
+
+
+
+
 .buttonsqr{
   padding: 1rem 3rem;
   color: $text-color-white;
@@ -21,6 +52,7 @@
   text-transform: uppercase;
 }
 
+
 .blog-btn{
   background-color: transparent;
   border: 1px solid $line-color;
@@ -29,4 +61,43 @@
   font-size: 1.4rem;
   margin: 4rem 0rem;
   font-family: "Roboto";
+}
+
+
+
+.btnsqr {
+  padding: 1rem 3rem;
+  color: $text-color-white;
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  font-size: 1.8rem;
+  margin-top: 4rem;
+  border: 1px solid $primary;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.283);
+    transform: skew(30deg) translateX(-100%); 
+    opacity: 0;
+    transition: transform 0.2s cubic-bezier(0.3, 1, 0.8, 1), opacity 0.2s ease;
+    z-index: 1;
+  }
+
+  &:hover::before {
+    transform: skew(30deg) translateX(0);
+    opacity: 1;
+  }
+
+  span {
+    position: relative;
+    z-index: 2;
+  }
 }

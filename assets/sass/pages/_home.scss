@@ -106,6 +106,8 @@ i {
     .boxes {
         display: grid;
         gap: 3rem;
+      
+            // height: 40rem;
         grid-template-columns: 1fr 1fr 1fr 2fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
@@ -116,6 +118,7 @@ i {
             position: relative;
 
             img {
+                object-fit: cover;
                 width: 100%;
                 height: 100%;
                 transition: filter 0.3s ease-in-out;
@@ -382,6 +385,7 @@ i {
             figure {
                 width: calc(100%/5 - 1rem);
                 object-fit: cover;
+                cursor: pointer;
 
                 img {
                     opacity: 0.5;
@@ -695,4 +699,65 @@ i {
     #shopnow .container-fluid .shopnow-leftside-bannerr {
         width: 100%;}
 
+}
+
+
+
+.our-product-cards-card-icon {
+    display: flex;
+    align-items: center;
+  
+    .icon-container {
+      position: relative;
+      width: 30px;
+      margin-right: .7rem;
+      height: 30px;
+      background-color: $bg-color;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 1s;
+  
+      &:hover {
+        transition: all 0.3s;
+        background-image: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+      }
+  
+      i {
+        font-size: 1.2rem;
+        color: $icon-color;
+      }
+    }
+  
+    .icon-label {
+      display: none; 
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #333;
+      white-space: nowrap;
+      text-transform: uppercase;
+      transition: all 1s;
+  
+    
+      &.show {
+        display: block; 
+        transform: translateX(10); 
+      }
+    }
+  
+
+    .icon-container:hover + .icon-label {
+      display: block;
+      transition: all 0.3s;
+    }
+  }
+
+
+
+  .form-select:focus {
+    border-color: white;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem white;
 }

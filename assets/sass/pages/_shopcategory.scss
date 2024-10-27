@@ -102,12 +102,16 @@
                 }
   
                 .form-check {
+
                     padding-top: 1.5rem;
                   .form-check-input:checked {
                     background-color: $primary;
                     border-color: $primary;
                   }
-  
+                  .active-check{
+                    background-color: $primary;
+                    border-color: $primary;
+                  }
                   .form-check-input:focus {
                     border-color: rgba(241, 166, 25, 0.502);
                     outline: 0;

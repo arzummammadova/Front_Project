@@ -49,8 +49,16 @@ width: 90%;
 }
 
 .color-sosial-blog{
-    opacity: 0.5;
+   
     margin-top: 3rem;
+    i{
+        opacity: 0.5;
+        &:hover{
+        opacity: 1;
+        transition: all 0.3s;
+    }  
+    }
+  
 }
 
 
@@ -302,7 +310,7 @@ img{
 
 
 .blog-inner .container .blog-pages-inner .blog-pages-inner-left {
-    flex: 0 0 50%;
+    flex: 0 0 70%;
 }
 
 @media (max-width:576px) {

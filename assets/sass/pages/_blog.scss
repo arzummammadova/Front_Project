@@ -423,3 +423,44 @@ background: #ffba00 !important;
        gap: 0rem;
     }
   }
+
+
+.paginationn{
+    padding: 5rem 0rem 10rem 5rem;
+}
+
+    
+  .paginationn a {
+         color: $p-color;
+    font-weight: 400;
+     background-color: $text-color-white;
+    font-size: 1.4rem;
+     float: left;
+     padding: 4px 12px;
+     text-decoration: none;
+     transition: background-color .3s;
+    
+     i{
+margin: 0!important;
+       font-size: 1.3rem!important;
+
+     }
+   }
+   .empty{
+     font-weight: 700!important;
+ padding-bottom: 40%;
+
+     background-color: 
+     transparent!important;
+     &:hover{
+       background-color: transparent!important;
+     }
+   }
+   .paginationn a.active {
+          background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+     color: white!important;
+   }
+   
+   .paginationn a:hover:not(.active):not(.empty)  { background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+     color: white!important;
+   }
